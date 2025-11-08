@@ -18,11 +18,12 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import chirp_mobile_app.composeapp.generated.resources.Res
 import chirp_mobile_app.composeapp.generated.resources.compose_multiplatform
+import com.gideon.core.designsystem.theme.ChirpTheme
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    ChirpTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
             modifier = Modifier
