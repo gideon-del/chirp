@@ -28,7 +28,7 @@ enum class DeviceConfiguration {
             return with(windowSizeClass) {
                 when {
                     minWidthDp < WIDTH_DP_MEDIUM_LOWER_BOUND &&
-                            minHeightDp >= HEIGHT_DP_EXPANDED_LOWER_BOUND -> MOBILE_PORTRAIT
+                            minHeightDp >= HEIGHT_DP_MEDIUM_LOWER_BOUND -> MOBILE_PORTRAIT
                     minWidthDp >= WIDTH_DP_EXPANDED_LOWER_BOUND &&
                             minHeightDp < HEIGHT_DP_MEDIUM_LOWER_BOUND -> MOBILE_LANDSCAPE
 
